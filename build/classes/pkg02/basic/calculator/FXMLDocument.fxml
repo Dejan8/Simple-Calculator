@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="aPane" prefHeight="355.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg02.basic.calculator.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="212.0" layoutY="292.0" onAction="#handleButtonAction" onMouseClicked="#processOperators" prefHeight="33.0" prefWidth="58.0" text="=" />
+      <TextField id="textAreaResult" fx:id="textAreaResult" alignment="CENTER_RIGHT" layoutX="34.0" layoutY="26.0" prefHeight="48.0" prefWidth="325.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Button fx:id="br1" layoutX="34.0" layoutY="112.0" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#processNumbers" prefHeight="33.0" prefWidth="58.0" text="1" />
+      <Button layoutX="124.0" layoutY="112.0" mnemonicParsing="false" onMouseClicked="#processNumbers" prefHeight="33.0" prefWidth="58.0" text="2" />
+      <Button layoutX="212.0" layoutY="112.0" mnemonicParsing="false" onMouseClicked="#processNumbers" prefHeight="33.0" prefWidth="58.0" text="3" />
+      <Button layoutX="34.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#processNumbers" prefHeight="33.0" prefWidth="58.0" text="4" />
+      <Button layoutX="124.0" layoutY="170.0" mnemonicParsing="false" onKeyPressed="#processNumbers" onMouseClicked="#processNumbers" prefHeight="33.0" prefWidth="58.0" text="5" />
+      <Button layoutX="212.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#processNumbers" prefHeight="33.0" prefWidth="58.0" text="6" />
+      <Button layoutX="34.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#processNumbers" prefHeight="33.0" prefWidth="58.0" text="7" />
+      <Button layoutX="124.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#processNumbers" prefHeight="33.0" prefWidth="58.0" text="8" />
+      <Button layoutX="212.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#processNumbers" prefHeight="33.0" prefWidth="58.0" text="9" />
+      <Button layoutX="34.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#processNumbers" prefHeight="33.0" prefWidth="58.0" text="0" />
+      <Button layoutX="299.0" layoutY="112.0" mnemonicParsing="false" onMouseClicked="#processOperators" prefHeight="33.0" prefWidth="58.0" text="+" />
+      <Button layoutX="299.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#processOperators" prefHeight="33.0" prefWidth="58.0" text="-" />
+      <Button layoutX="299.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#processOperators" prefHeight="33.0" prefWidth="58.0" text="*" />
+      <Button layoutX="299.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#processOperators" prefHeight="33.0" prefWidth="58.0" text="/" />
+      <Button fx:id="buttonC" layoutX="124.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#processNumbersClear" prefHeight="33.0" prefWidth="58.0" text="C" />
+    </children>
+</AnchorPane>
